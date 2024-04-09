@@ -19,4 +19,13 @@ class Order extends Model
         'update_order_date',
         'products_details',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
+
+$order = Order::find($orderId);
+
+$user = $order->user;

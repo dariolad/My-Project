@@ -13,3 +13,7 @@ class UserController extends Controller
         return new JsonResource($users);
     }
 }
+
+$user = User::find($userId);
+
+$orders = $user->orders;
