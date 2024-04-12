@@ -12,15 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('orders', function (Blueprint $table) {
-        $table->string('order_id')->primary()->unique();
-        $table->string('user_id')->unique();
-        $table->string('total');
-        $table->string('order_status');
-        $table->string('shipping_address');
-        $table->timestamp('order_date');
-        $table->timestamp('update_order_date');
-        $table->string('products_details');
-        $table->timestamps();
+            $table->string('order_id')->primary()->unique();
+            $table->string('user_id')->unique();
+            $table->string('total');
+            $table->string('order_status');
+            $table->string('shipping_address');
+            $table->timestamp('order_date');
+            $table->timestamps();
         });
     }
 

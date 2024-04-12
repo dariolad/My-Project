@@ -16,8 +16,6 @@ class Order extends Model
         'order_status',
         'shipping_address',
         'order_date',
-        'update_order_date',
-        'products_details',
     ];
 
     public function user()
